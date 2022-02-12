@@ -18,11 +18,58 @@ h2,h3{
     color: rgb(209, 34, 139)!important;
 
 }
-.search-results{
-    background-color:whitesmoke!important;
-    width:100vw;
-    height: auto;
+#search-input{
+    border-radius: 2rem 2rem;
 }
-#searchresults-heading{
+.search-results{
+    background-color:transparent;
+    width:90%;
+    height:90%;
+}
+#search-results-heading{
     color: darkgreen;
+}
+.container{
+    background-color: transparent;
+}
+#searchbtn{
+   
+    border-radius: 2rem 2rem;
+    position:relative;
+    left:-20px;
+    cursor: pointer;
+}
+.hero-info{
+
+height:auto;
+width:96%;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 2rem 2rem;
+border:1px solid grey;
+margin:1px;
+background-color: aliceblue;
+
+}
+ 
+.hero-details{
+/* background-color: blueviolet; */
+width:45%;
+height:90%;
+
+}
+img{
+    height:100%;
+    width:100%;
+    border-radius: 2rem 2rem ;
+}
+.hero-pic{
+/* background-color: rgb(226, 43, 165); */
+width:45%;
+height:90%;
+}
+#likeable
+{
+    color:rgb(248, 12, 150)
 }

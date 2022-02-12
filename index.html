@@ -49,9 +49,12 @@
 <div class="container">
     <div class="row">
         <div class="d-flex justify-content-center">
-            <form class="d-flex justify-content-center" >
+            <form class="d-flex justify-content-center">
                <input type="text" id="search-input" placeholder="Search here..." class="form-control mt-5">
-               <i class="fas fa-search mt-5 "></i>
+               <!-- <i id="clear-search" class="fa-solid fa-xmark"></i> -->
+               <!-- <i class="fa-solid fa-rectangle-xmark"></i> -->
+
+               <i id="searchbtn" class="fas fa-search mt-5 pt-2 "></i>
          </form>
         </div>
     </div>
@@ -60,11 +63,11 @@
 <div class="container">
     <div class="row">
     <div class="d-flex justify-content-center">
-        <h2 id="searchresults-heading" class="mt-4 mb-4">Search Results</h2>
+        <h2 id="search-results-heading" class="mt-4 mb-4">Search Results</h2>
     </div>
     </div>
 
-    <div class="search-results flex-column d-flex justify-content-center flex-wrap align-middle">
+    <div class="search-results d-flex flex-wrap justify-content-center align-middle">
     
    </div>
 </div>
@@ -73,4 +76,5 @@
     <footer>
         @Created By Vamsi Krishna Derangula..!
     </footer>
+    <script src="js/index.js"></script>
 </body>
