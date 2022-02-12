@@ -1,0 +1,28 @@
+body{
+    font-size: 18px;
+    font-weight: 300;
+    background-color:green; 
+    letter-spacing:2px;
+    background:-webkit-linear-gradient(45deg,lightblue,pink); 
+    background:linear-gradient(to right,lightblue,pink);
+}
+h2,h3{
+    font-family: 'Titillium Web', sans-serif;  
+    font-weight: 400;
+}
+#customed-nav{
+    background-color: darkblue!important;
+    font-size: 1.3rem;
+}
+.navbar-brand:hover{
+    color: rgb(209, 34, 139)!important;
+
+}
+.search-results{
+    background-color:whitesmoke!important;
+    width:100vw;
+    height: auto;
+}
+#searchresults-heading{
+    color: darkgreen;
+}
