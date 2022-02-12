@@ -6,9 +6,10 @@ body{
     background:-webkit-linear-gradient(45deg,lightblue,pink); 
     background:linear-gradient(to right,lightblue,pink);
 }
-h2,h3{
+h2,p{
     font-family: 'Titillium Web', sans-serif;  
     font-weight: 400;
+    color:blueviolet;
 }
 #customed-nav{
     background-color: darkblue!important;

@@ -15,7 +15,6 @@ searchInput.addEventListener('keyup',(e)=>{
     let searchText = e.target.value;
   
     if(searchText.length < 2){
-        srHeading.textContent = 'Enter Atleast 2 letters';
         searchResults.innerHTML = '';
     }else{
         srHeading.textContent = `Search Results for : ${searchText}` ;

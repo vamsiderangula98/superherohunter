@@ -1,0 +1,99 @@
+body{
+    font-size: 18px;
+    font-weight: 300;
+    background-color:green; 
+    letter-spacing:2px;
+    background:-webkit-linear-gradient(45deg,lightblue,pink); 
+    background:linear-gradient(to right,lightblue,pink);
+}
+/* navbar */
+#customed-nav{
+    background-color: darkblue!important;
+    font-size: 1.5rem;
+}
+.navbar-brand:hover{
+    color: rgb(209, 34, 139)!important;
+
+}
+.fav-heroes{
+    background-color:grey;
+    height:auto;
+    width:89vw;
+}
+
+.hero-info{
+background-color: blue;
+    height:96%;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem 2rem;
+    border:1px solid grey;
+    margin:3px;
+    
+    
+    }
+     
+    .hero-details{
+    background-color: blueviolet;
+    width:90%;
+    height:45%;
+    border-radius: 2rem 2rem;
+    
+    }
+    img{
+        background-color: brown;
+        height:100%;
+        width:100%;
+        border-radius: 2rem 2rem ;
+    }
+    .hero-pic{
+    background-color: rgb(174, 218, 15);
+    width:90%;
+    height:45%;
+    }
+    #likeable
+    {
+        color:rgb(248, 12, 150)
+    }
+    .fas{
+        color: #08ce5b;}
+        .fas:hover{
+            transform: scale(1.2);
+        }
+/* 
+
+.hero-container{
+    background-color: #08ce5b;
+    padding: 2px 16px;
+}
+
+.hero-pic img{
+    background-color: #08ce5b;
+    border-radius: 4px;
+    width: 100%;
+    height : 300px;
+}
+/* hero name and fav icon styles */
+/* .hero-details{
+cursor: pointer;
+
+}
+.hero-details:hover{
+    transform: scale(1.1);
+}
+.fas{
+    color: #08ce5b;;
+}
+.fas:hover{
+    cursor: pointer;
+}
+
+/* details div styles */
+ /* .wdiv{ 
+    width: 200px;
+    color:#FAAE7B;
+    font-family: 'Titillium Web', sans-serif;
+} */ 
