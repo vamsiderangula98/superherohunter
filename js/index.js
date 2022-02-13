@@ -62,9 +62,11 @@ let renderData = (data)=> {
           `
           <div class="hero-info">
          
-          <div class="hero-details" id=${hero.id}>
+          <div class="hero-details" >
+         <div id=${hero.id}>
                 <p class="get-details wdiv text-center " >${hero.name}</p>
                 <p class="get-details wdiv text-center " >${hero.appearance.gender}</p>
+                </div>
          <div class="text-center wdiv mt-1 mb-1">
           <i id="likeable" class="${isFav ? 'fas' : 'far'} fa-heart fa-2x fav-btn mb-1 "></i>
           </div>

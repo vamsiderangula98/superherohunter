@@ -49,6 +49,7 @@ background-color: blue;
         width:100%;
         border-radius: 2rem 2rem ;
     }
+
     .hero-pic{
     background-color: rgb(174, 218, 15);
     width:90%;
@@ -63,6 +64,13 @@ background-color: blue;
         .fas:hover{
             transform: scale(1.2);
         }
+        .hero-details:hover{
+            transform: scale(1.1);
+        }
+        .hero-details{
+            cursor: pointer;
+            
+            }
 /* 
 
 .hero-container{
