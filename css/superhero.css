@@ -8,8 +8,8 @@ body{
 }
 /* common style classes */
 .headings{
-   font-family: 'Titillium Web', sans-serif;
-   color:darkgreen;
+    font-family: 'Titillium Web', sans-serif;
+    color:darkgreen;
 }
 /* navbar */
 #customed-nav{
@@ -25,12 +25,10 @@ body{
     border-radius:2rem 2rem;
     box-shadow:1px 1px 15px 15px whitesmoke;
     padding:2px;
-    
 }
 #superhero-pic{
     margin-left:39%;
 }
-  
 .shero-iname{
     width:100%;
     height:100%;
@@ -51,8 +49,6 @@ body{
    flex-wrap: wrap;
    justify-content: center;
    background-color:aliceblue;
-
-   /* border: 2px solid grey; */
    border-radius: 2rem 2rem;
    height:110%;
    width:95vw;
@@ -67,7 +63,6 @@ body{
 }
 .key{
     width: 35%;  
-
 }
 .key p{
     font-family: 'Titillium Web', sans-serif;
@@ -81,5 +76,4 @@ body{
 .value p{
     font-size: 18px;
     color:navy;
- 
 }

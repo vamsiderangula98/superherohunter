@@ -1,6 +1,7 @@
 let searchInput = document.querySelector('#search-input');
 let srHeading = document.querySelector('#search-results-heading');
 let searchResults = document.querySelector('.search-results');
+
 //variables for fav button
 let ifFav = 'fas';
 let ifNotFav = 'far';
@@ -22,6 +23,7 @@ searchInput.addEventListener('keyup',(e)=>{
     }
 
 });
+
 //fetch data from Api
 let fetchData = async (searchText) => {
     
