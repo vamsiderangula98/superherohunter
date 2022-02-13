@@ -16,6 +16,11 @@ body{
     background-color:darkblue !important;
     font-size: 1.6rem;
 }
+.navbar-brand:hover{
+    color: rgb(222, 245, 14)!important;
+    transform: scale(1.2);
+    font-weight:500;
+}
 /* superhero image card */
 .imagecard {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

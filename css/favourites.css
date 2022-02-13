@@ -18,7 +18,9 @@ p{
     font-size: 1.5rem;
 }
 .navbar-brand:hover{
-    color: rgb(209, 34, 139)!important;
+    color: rgb(222, 245, 14)!important;
+    transform: scale(1.2);
+    font-weight:500;
 }
 .fav-heroes{
     height:100%;
