@@ -1,0 +1,52 @@
+body{
+    font-size: 18px;
+    font-weight: 300;
+    background-color:green; 
+    letter-spacing:2px;
+    background:-webkit-linear-gradient(45deg,lightblue,pink); 
+    background:linear-gradient(to right,lightblue,pink);
+}
+/* common style classes */
+.headings{
+   font-family: 'Titillium Web', sans-serif;
+   color: rgb(255, 166, 0);
+}
+/* navbar */
+#customed-nav{
+    background-color: #264653 !important;
+    font-size: 1.5rem;
+}
+/* superhero image card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 70%;
+}
+  
+.hero-container{
+    padding: 6px 16px;
+}
+
+/* text styles */
+.api-data{
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color : #fff;
+}
+.key{
+    width: 35%;  
+}
+.key p{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.value{
+    width: 50%;  
+}
+.value p{
+    font-size: 16px;
+ 
+}
