@@ -1,4 +1,5 @@
-let heroesArray = JSON.parse(localStorage.getItem('superheroes'));
+let heroesArray = JSON.parse(localStorage.getItem('favsuperheroes'));
+console.log(heroesArray);
 let accessToken = '1339275583167650';
 let url = `https://superheroapi.com/api.php/${accessToken}/`;
 let favHeroes = document.querySelector('.fav-heroes');
@@ -36,19 +37,23 @@ let renderData = (hero)=> {
   }
     newDiv.innerHTML =
     `
-    <div class="hero-info m-3">
+    
+    <div class="hero-info m-1">
     <div class="hero-pic">
     <img src="${hero.image.url}">
     </div>
     <div class="hero-details" > 
     <div id=${hero.id}>
-    <p>class="get-details wdiv text-center mt-3" >${hero.name}</p>
-    <p>class="get-details wdiv text-center mt-3" >${hero.appearance.gender}</p>
+    <p class="get-details wdiv text-center mt-1">${hero.name}</p>
+    <p class="get-details wdiv text-center mt-1">${hero.appearance.gender}</p>
     </div>
-    <div class="text-center wdiv mt-3 mb-4">
-    <i class="${isFav ? 'fas' : 'far'} fa-heart fa-2x fav-btn"></i>
+    <div class="text-center wdiv mb-1">
+    <i id=likeable class="${isFav ? 'fas' : 'far'} fa-heart fa-2x fav-btn"></i>
     </div>
     </div>
+    <div>
+    <a id="morebtn" href="superhero.html?id=${hero.id}">more ></b></a>
+</div>
     </div>
     `;
     favHeroes.appendChild(newDiv);
@@ -69,7 +74,7 @@ favHeroes.addEventListener('click',(e)=>{
             if(heroesArray.indexOf(heroId) != -1){
                 //remove the id
                 heroesArray = heroesArray.filter((item) => item != heroId);
-                localStorage.setItem('superheroes',JSON.stringify(heroesArray));
+                localStorage.setItem('favsuperheroes',JSON.stringify(heroesArray));
                 e.target.classList.remove('fas');
                 e.target.classList.add('far');
                 // call the loading function again

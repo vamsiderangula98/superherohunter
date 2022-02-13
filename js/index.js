@@ -28,28 +28,28 @@ let fetchData = async (searchText) => {
     await fetch(url+searchText)
     .then(res => res.json())
     .then(data => renderData(data))
-    .catch(error =>  searchResults.innerHTML = '<h3 class="mt-4 text-info">No Results Found!!!</h3>')
+    .catch(error =>  searchResults.innerHTML = `<h3 class="mt-4 text-info">No Results Found!!!</h3>${error}`)
 }
 // initialize empty array for local storage
 
 function initializeLocalstorage(){
     let localArray = [];
-    if(localStorage.getItem('superheroes') == null){
+    if(localStorage.getItem('favsuperheroes') == null){
         //create a new localStorage
-        localStorage.setItem('superheroes',JSON.stringify(localArray));
+        localStorage.setItem('favsuperheroes',JSON.stringify(localArray));
     }
 }
 
 //Rendering Api data on to browser
 let renderData = (data)=> {
-    let localArray = JSON.parse(localStorage.getItem('superheroes'));
+    let localArray = JSON.parse(localStorage.getItem('favsuperheroes'));
     if(data.length == 0){
         console.log('Results Not Found');
     }else{
         searchResults.innerHTML = '';
         for(let hero of data.results){
           let newDiv = document.createElement('div');
-          newDiv.className = 'results col-lg-3 col-md-4 col-sm-6 ';
+          newDiv.className = 'results col-lg-3 col-md-4 col-sm-6';
           newDiv.id = hero.id;
         //   check id in local storage
         let isFav ;
@@ -66,11 +66,14 @@ let renderData = (data)=> {
          <div id=${hero.id}>
                 <p class="get-details wdiv text-center " >${hero.name}</p>
                 <p class="get-details wdiv text-center " >${hero.appearance.gender}</p>
-                </div>
-         <div class="text-center wdiv mt-1 mb-1">
-          <i id="likeable" class="${isFav ? 'fas' : 'far'} fa-heart fa-2x fav-btn mb-1 "></i>
+         </div>
+         <div id="like" class="text-center wdiv mt-1 mb-1">
+          <i id="likeable" class="${isFav ? 'fas' : 'far'} fa-heart fa-2x fav-btn  "></i>
           </div>
-          </div>
+          <div id="morebtn" >
+          <a href="superhero.html?id=${hero.id}"><b>more ></b></a>
+      </div>
+      </div>
           <div class="hero-pic">
           <img src="${hero.image.url}">
           </div>
@@ -90,19 +93,22 @@ console.log(e.target.parentNode.id);
         window.open(`superhero.html?id=${heroId}`);
     }else if(e.target.classList.contains('fav-btn')){
         let heroId =  e.target.parentNode.previousElementSibling.id;
-        let localArray = JSON.parse(localStorage.getItem('superheroes'));
+        console.log(heroId);
+        let localArray = JSON.parse(localStorage.getItem('favsuperheroes'));
+        console.log(localArray);
 
         // if id already exists in localStorage
         if(localArray.indexOf(heroId) != -1){
             //remove the id
             localArray = localArray.filter((item) => item != heroId);
-            localStorage.setItem('superheroes',JSON.stringify(localArray));
+            localStorage.setItem('favsuperheroes',JSON.stringify(localArray));
+            console.log(localArray);
             e.target.classList.remove('fas');
             e.target.classList.add('far');
             alert('Removed from favourites...');
         }else{
             localArray.push(heroId);
-            localStorage.setItem('superheroes',JSON.stringify(localArray));
+            localStorage.setItem('favsuperheroes',JSON.stringify(localArray));
             e.target.classList.remove('far');
             e.target.classList.add('fas');
             alert('Added to favourites...');

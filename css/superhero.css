@@ -9,27 +9,57 @@ body{
 /* common style classes */
 .headings{
    font-family: 'Titillium Web', sans-serif;
-   color: rgb(255, 166, 0);
+   color:darkgreen;
 }
 /* navbar */
 #customed-nav{
-    background-color: #264653 !important;
-    font-size: 1.5rem;
+    background-color:darkblue !important;
+    font-size: 1.6rem;
 }
 /* superhero image card */
-.card {
+.imagecard {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 70%;
+    width:100%;
+    height:80%;
+    border-radius:2rem 2rem;
+    box-shadow:1px 1px 15px 15px whitesmoke;
+    padding:2px;
+    
+}
+#superhero-pic{
+    margin-left:39%;
 }
   
+.shero-iname{
+    width:100%;
+    height:100%;
+}
+.shero-image{
+    background-color: blueviolet;
+    width:80%;
+    height:75%;
+    margin-bottom: 5px;
+    border-radius: 2rem 2rem;
+}
 .hero-container{
+    border-top: 1px solid grey;
     padding: 6px 16px;
 }
+#hero-fullinfo{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   background-color:aliceblue;
 
+   /* border: 2px solid grey; */
+   border-radius: 2rem 2rem;
+   height:110%;
+   width:95vw;
+}
 /* text styles */
 .api-data{
-    line-height: 1.5rem;
+    line-height: 1.8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,16 +67,19 @@ body{
 }
 .key{
     width: 35%;  
+
 }
 .key p{
     font-family: 'Titillium Web', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 800;
+    font-size: 20px;
+    color:darkred;
 }
 .value{
     width: 50%;  
 }
 .value p{
-    font-size: 16px;
+    font-size: 18px;
+    color:navy;
  
 }
